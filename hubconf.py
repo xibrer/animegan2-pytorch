@@ -27,7 +27,7 @@ def generator(pretrained=True, device="cpu", progress=True, check_hash=True):
             ckpt_url,
             map_location=device,
             progress=progress,
-            check_hash=check_hash,
+            # check_hash=check_hash,
         )
         model.load_state_dict(state_dict)
 
